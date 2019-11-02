@@ -69,6 +69,12 @@ end
     @file=File.read(str)
 
   end
+  def Document
+
+  end
+  def ps2
+
+  end
 
   private
   def quotation_params

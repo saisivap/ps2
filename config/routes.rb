@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  get 'project/index'
+  devise_for :users,path: '',path_names: { sign_in: 'login', sign_out: 'logout'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # get 'quotation' ,to: 'quotation#quotation'
   get 'site/index'
 
-  root to:'site#index'
-
+  # root to:'site#index'
+  # root :to => redirect("/login")
   get 'site/ps1'
   get 'site/zero_division_error'
   get 'site/news_page'
@@ -12,7 +14,7 @@ Rails.application.routes.draw do
 
 
 
-  root 'quotation#quotation'
+  # root 'quotation#quotation'
   get 'quotation', to:'quotation#quotation'
   get 'index', to:'quotation#index'
   get 'export',to: 'quotation#export'
@@ -22,5 +24,11 @@ Rails.application.routes.draw do
   post 'quotation/quotation'
   get 'sql',to: 'quotation#sql'
   get 'sql1',to: 'quotation#sql1'
+  get 'quotation/ps2'
+
+  get 'document',to:'quotation#Document'
+
+
+  root "project#index"
 
 end
