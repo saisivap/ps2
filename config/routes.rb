@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'export',to: 'quotation#export'
   post 'uploadFile', to:'quotation#uploadFile'
   # get 'about' ,to: 'articles#about'
-  post '/', to:'quotation#quotation'
+  post '/quotation', to:'quotation#quotation'
   post 'quotation/quotation'
   get 'sql',to: 'quotation#sql'
   get 'sql1',to: 'quotation#sql1'

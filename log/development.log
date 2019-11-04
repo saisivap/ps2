@@ -18301,3 +18301,288 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 152ms (Views: 149.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-11-05 00:52:20 +0700
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+Completed 401 Unauthorized in 89ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-05 00:52:21 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (40.5ms)
+Started GET "/login" for ::1 at 2019-11-05 00:52:24 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 675ms (Views: 672.4ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 3914ms (Views: 3872.7ms | ActiveRecord: 14.3ms)
+
+
+Started GET "/quotation/ps2" for ::1 at 2019-11-05 00:52:30 +0700
+Processing by QuotationController#ps2 as HTML
+  Rendering quotation/ps2.html.erb within layouts/application
+  Rendered quotation/ps2.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 83ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-05 00:52:32 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (2.4ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (127.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 289ms (Views: 181.0ms | ActiveRecord: 16.8ms)
+
+
+Started POST "/quotation" for ::1 at 2019-11-05 00:52:58 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/quotation"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:10 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:11 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:16 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:25 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:42 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:45 +0700
+Started PUT "/__web_console/repl_sessions/48d22b6c6eb1d2c519e852b05f647032" for ::1 at 2019-11-05 00:53:47 +0700
+Started GET "/quotation" for ::1 at 2019-11-05 00:56:57 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (0.4ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  Rendered quotation/quotation.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for #<Quotation::ActiveRecord_Relation:0x00007f566a075748>):
+    41: <%#= form_for @quotation, :url => { :action => :quotation } do |form| %>
+    42: <%= form_with(model:@quotation , local: true, :url => { :action => :quotation }) do |form| %>
+    43:   <%#if @quotation.errors.any? %>
+    44:     <% @quotation.errors.full_messages.each do |message| %>
+    45:       <%= message %>
+    46:       <%end %>
+    47:     <%#end %>
+  
+app/views/quotation/quotation.html.erb:44:in `block in _app_views_quotation_quotation_html_erb__1255707801815207297_70004561388000'
+app/views/quotation/quotation.html.erb:42:in `_app_views_quotation_quotation_html_erb__1255707801815207297_70004561388000'
+Started GET "/" for ::1 at 2019-11-05 00:57:10 +0700
+Processing by ProjectController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-05 00:57:11 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 47.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/quotation/ps2" for ::1 at 2019-11-05 00:57:13 +0700
+Processing by QuotationController#ps2 as HTML
+  Rendering quotation/ps2.html.erb within layouts/application
+  Rendered quotation/ps2.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-05 00:57:15 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (0.6ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  Rendered quotation/quotation.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for #<Quotation::ActiveRecord_Relation:0x00007f565422f158>):
+    41: <%#= form_for @quotation, :url => { :action => :quotation } do |form| %>
+    42: <%= form_with(model:@quotation , local: true, :url => { :action => :quotation }) do |form| %>
+    43:   <%#if @quotation.errors.any? %>
+    44:     <% @quotation.errors.full_messages.each do |message| %>
+    45:       <%= message %>
+    46:       <%end %>
+    47:     <%#end %>
+  
+app/views/quotation/quotation.html.erb:44:in `block in _app_views_quotation_quotation_html_erb__1255707801815207297_70004377743060'
+app/views/quotation/quotation.html.erb:42:in `_app_views_quotation_quotation_html_erb__1255707801815207297_70004377743060'
+Started GET "/quotation" for ::1 at 2019-11-05 00:57:33 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  Rendered quotation/quotation.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Quotation:0x00007f566a9e7218>):
+    25: <fieldset>
+    26: <legend><h3>Quotations</h3></legend>
+    27: <ul>
+    28:   <% for quotation in @quotation %>
+    29:     <li><%= h quotation.author_name %>: <%= h quotation.quote %></li>
+    30:   <% end %>
+    31: </ul>
+  
+app/views/quotation/quotation.html.erb:28:in `_app_views_quotation_quotation_html_erb__1255707801815207297_70004482882880'
+Started GET "/quotation" for ::1 at 2019-11-05 00:58:05 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.0ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 59.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/quotation?sort_by=date" for ::1 at 2019-11-05 00:58:11 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"sort_by"=>"date"}
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (93.2ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."created_at" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (109.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 183ms (Views: 86.9ms | ActiveRecord: 93.9ms)
+
+
+Started GET "/quotation?sort_by=category" for ::1 at 2019-11-05 00:58:13 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"sort_by"=>"category"}
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.0ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 69ms (Views: 65.1ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mQuotation Load (82.3ms)[0m  [1m[34mSELECT  "quotations".* FROM "quotations" ORDER BY "quotations"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/quotation" for ::1 at 2019-11-05 00:59:22 +0700
+  
+ActionController::RoutingError (No route matches [POST] "/quotation"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/quotation" for ::1 at 2019-11-05 01:00:21 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K4Qe7NBrylJyESfdhGVoKhr5t7im9vpngGSuVQeiw8FdO5gOw9WJYWyzYkI60q0XtP+Fr4AIdXrQPCzq3SgWJg==", "quotation"=>{"author_name"=>"Ted Turner", "category2"=>"student", "category"=>"", "quote"=>"xrdcfghbjnhbgftdres"}, "commit"=>"Create"}
+Unpermitted parameter: :category2
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[36mQuotation Create (31.9ms)[0m  [1m[32mINSERT INTO "quotations" ("author_name", "category", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_name", "Ted Turner"], ["category", "student"], ["quote", "xrdcfghbjnhbgftdres"], ["created_at", "2019-11-04 18:00:21.228927"], ["updated_at", "2019-11-04 18:00:21.228927"]]
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[35m (45.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.2ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 87.1ms | ActiveRecord: 83.4ms)
+
+
+Started GET "/quotation?sort_by=date" for ::1 at 2019-11-05 01:00:31 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"sort_by"=>"date"}
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.0ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."created_at" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/quotation" for ::1 at 2019-11-05 01:00:48 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m/53ToF2SxcSi822a1uZ1Bu1jazds+XweM/aqgi7ILTtQfGsksgIJAwpiCnV7FzptbO/u/tNau0ol1gV0jH1Uw==", "quotation"=>{"author_name"=>"kitty", "category2"=>"something", "category"=>"", "quote"=>"hey this is something personal"}, "commit"=>"Create"}
+Unpermitted parameter: :category2
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[36mQuotation Create (0.8ms)[0m  [1m[32mINSERT INTO "quotations" ("author_name", "category", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_name", "kitty"], ["category", "something"], ["quote", "hey this is something personal"], ["created_at", "2019-11-04 18:00:48.217436"], ["updated_at", "2019-11-04 18:00:48.217436"]]
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[35m (132.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (0.5ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 217ms (Views: 71.6ms | ActiveRecord: 134.9ms)
+
+
