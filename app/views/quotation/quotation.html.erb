@@ -3,6 +3,7 @@
 <!--  Quote <%#= text_field_tag :search,params[:search] %>-->
   <%#= submit_tag 'Search' %>
 <%# end %>
+<div class="ui container">
 <%= form_tag index_path,:method=>'get' do %>
 
   Quote <%= text_field_tag :search,params[:search] %>
@@ -73,4 +74,4 @@
     <%= form.submit 'Create' %>
   </div>
   </p>
-<% end %>
+  <% end %></div>

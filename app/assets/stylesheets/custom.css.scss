@@ -1,1 +1,45 @@
+
 @import "semantic-ui";
+
+
+#mahesh{
+  margin-top: 20%;
+  //margin-top: 50%;
+  //margin-left: 50%;
+  //transform: translate(-50%, -50%);
+  ////-ms-transform: translate(-50%, -50%);
+  //text-align: center;
+};
+#bg{
+  background-image: url("avatar2/coffee2.jpg");
+  width: 100%;
+  height: 100%;
+  //background-repeat: no-repeat;
+  background-size: cover;
+  //background-position: center;
+  background-attachment: fixed;
+  //overflow-y: hidden;
+  overflow:hidden;
+}
+.image:hover{
+  opacity:0.5;
+}
+.text {
+  background-color: #8127AF;
+  color: white;
+  font-size: 16px;
+  padding: 10px 12px;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle:hover{
+  opacity: 1;
+}

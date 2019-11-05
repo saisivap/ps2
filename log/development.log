@@ -18586,3 +18586,1516 @@ Unpermitted parameter: :category2
 Completed 200 OK in 217ms (Views: 71.6ms | ActiveRecord: 134.9ms)
 
 
+Started GET "/" for ::1 at 2019-11-05 12:33:29 +0700
+  [1m[35m (42.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+Completed 401 Unauthorized in 75ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-05 12:33:30 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (78.9ms)
+Started GET "/login" for ::1 at 2019-11-05 12:33:33 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+Completed 200 OK in 7384ms (Views: 7341.3ms | ActiveRecord: 12.1ms)
+
+
+Completed 200 OK in 4551ms (Views: 4549.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-05 12:33:49 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OoT34uqOU73mtnLj9aMLxwYKwQl5W0DUwgKeRWeVTCqCZZVJwLQ7XzKu/b3GPwCzrinjrRW4gTUBukk+gOqXtg==", "user"=>{"email"=>"saisivap289@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "saisivap289@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 522ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 12:33:50 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 12:33:58 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (9.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 63.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 12:34:47 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 12:35:15 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 62.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 21:48:32 +0700
+  [1m[35m (51.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (41.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2014.6ms)
+Started GET "/" for ::1 at 2019-11-05 21:48:36 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 726ms (Views: 720.2ms | ActiveRecord: 1.1ms)
+
+
+Completed 200 OK in 3425ms (Views: 3161.2ms | ActiveRecord: 108.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 21:55:16 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 49.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 21:55:50 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 85ms (Views: 77.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 21:57:08 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 54.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:01 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 63ms (Views: 59.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:02 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 66ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:02 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 53.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 70.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 56.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:14 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 60.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:02:40 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:09:04 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 7565ms (Views: 7559.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:09:41 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5582ms (Views: 5576.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:09:54 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5560ms (Views: 5553.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:10:21 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:10:45 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 64.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:17:11 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (352.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 403ms (Views: 399.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:32:46 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 1122ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/paruchuri/Desktop/basics/ps/app/assets/config
+  /home/paruchuri/Desktop/basics/ps/app/assets/images
+  /home/paruchuri/Desktop/basics/ps/app/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/fonts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/images
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/node_modules
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/stylesheets):
+    42:     <%= csrf_meta_tags %>
+    43:     <%= csp_meta_tag %>
+    44: 
+    45:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    46:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    47:   </head>
+    48: 
+  
+app/assets/stylesheets/custom.css.scss:2
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb__205462804917204691_70282776243380'
+Started GET "/" for ::1 at 2019-11-05 22:33:50 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap.
+Load paths:
+  /home/paruchuri/Desktop/basics/ps/app/assets/config
+  /home/paruchuri/Desktop/basics/ps/app/assets/images
+  /home/paruchuri/Desktop/basics/ps/app/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/fonts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/images
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/node_modules
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/stylesheets):
+    42:     <%= csrf_meta_tags %>
+    43:     <%= csp_meta_tag %>
+    44: 
+    45:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    46:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    47:   </head>
+    48: 
+  
+app/assets/stylesheets/custom.css.scss:1
+app/views/layouts/application.html.erb:45:in `_app_views_layouts_application_html_erb__205462804917204691_70282879786080'
+Started GET "/" for ::1 at 2019-11-05 22:34:13 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 5022ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'popper' with type 'application/javascript'
+Checked in these paths: 
+  /home/paruchuri/Desktop/basics/ps/app/assets/config
+  /home/paruchuri/Desktop/basics/ps/app/assets/images
+  /home/paruchuri/Desktop/basics/ps/app/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/fonts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/images
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/semantic-ui-sass-2.4.2.0/app/assets/stylesheets
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actioncable-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activestorage-5.2.3/app/assets/javascripts
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/actionview-5.2.3/lib/assets/compiled
+  /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/paruchuri/Desktop/basics/ps/node_modules):
+    43:     <%= csp_meta_tag %>
+    44: 
+    45:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    46:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    47:   </head>
+    48: 
+    49:   <body>
+  
+app/assets/javascripts/application.js:16
+app/views/layouts/application.html.erb:46:in `_app_views_layouts_application_html_erb__205462804917204691_70282986300920'
+Started GET "/" for ::1 at 2019-11-05 22:34:51 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 321ms (Views: 315.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:39:22 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5114ms (Views: 5112.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:40:01 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5424ms (Views: 5416.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:40:38 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 5504ms (Views: 5499.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:41:12 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5544ms (Views: 5541.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:41:37 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:42:49 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5962ms (Views: 5954.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:43:54 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5996ms (Views: 5989.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:44:44 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5506ms (Views: 5500.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:51:04 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5430ms (Views: 5418.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:38 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:40 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 50.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:42 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:42 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 90ms (Views: 82.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 56.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.2ms)
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 107ms (Views: 103.2ms | ActiveRecord: 0.3ms)
+
+
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 80.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:52:43 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 78ms (Views: 71.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:53:47 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 51.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:55:01 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 64ms (Views: 57.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:55:34 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5048ms (Views: 5043.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:55:54 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 4778ms (Views: 4775.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 22:56:37 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (3.4ms)
+Completed 200 OK in 113ms (Views: 76.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 22:56:44 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (162.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 261ms (Views: 232.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:57:05 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 22:57:30 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 142ms (Views: 139.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 22:57:36 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:01:52 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 64.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:02:13 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (13.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 75ms (Views: 73.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:02:17 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:02:19 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (11.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 75ms (Views: 72.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:02:19 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 66ms (Views: 63.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:02:30 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 47.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:03:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 51ms (Views: 48.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:03:42 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 57ms (Views: 55.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:04:32 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 5996ms (Views: 5990.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:05:44 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5768ms (Views: 5763.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:07:01 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (18.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5859ms (Views: 5848.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:08:07 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5664ms (Views: 5655.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:08:17 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 6077ms (Views: 6070.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:09:54 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 5889ms (Views: 5887.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:10:57 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5704ms (Views: 5697.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:12:38 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 54.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:14:22 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/images/avatar2/coffee2.png" for ::1 at 2019-11-05 23:14:22 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/images/avatar2/coffee2.png"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-11-05 23:14:34 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/avatar2/coffee2.png" for ::1 at 2019-11-05 23:14:34 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/avatar2/coffee2.png"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-11-05 23:14:55 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 137ms (Views: 133.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:15:13 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5802ms (Views: 5798.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:15:27 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5832ms (Views: 5828.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:18:27 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5622ms (Views: 5613.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:19:20 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5874ms (Views: 5869.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:22:55 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:27:12 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 6351ms (Views: 6343.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:27:24 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 60ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:27:26 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (14.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:27:30 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (3.8ms)
+Completed 200 OK in 77ms (Views: 73.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:27:31 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 84ms (Views: 81.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:27:35 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:29:51 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5528ms (Views: 5522.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:30:10 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 166ms (Views: 162.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:30:13 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 64ms (Views: 55.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:30:21 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 65.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:31:14 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 5623ms (Views: 5617.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:32:23 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5686ms (Views: 5684.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:32:55 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 5748ms (Views: 5746.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:34:08 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 5568ms (Views: 5564.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:35:03 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 5689ms (Views: 5683.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:35:34 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 6001ms (Views: 5998.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:36:53 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 62ms (Views: 59.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:38:29 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+Completed 200 OK in 5847ms (Views: 5843.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:38:59 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5569ms (Views: 5560.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:39:15 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5690ms (Views: 5683.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:39:27 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5819ms (Views: 5814.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:39:55 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 5767ms (Views: 5765.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:40:12 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 5987ms (Views: 5982.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:40:45 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 5536ms (Views: 5532.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:42:00 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (6.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 130ms (Views: 128.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:42:48 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quotation/ps2" for ::1 at 2019-11-05 23:43:04 +0700
+Processing by QuotationController#ps2 as HTML
+  Rendering quotation/ps2.html.erb within layouts/application
+  Rendered quotation/ps2.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 159ms (Views: 66.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-05 23:43:07 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (127.8ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:28
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:56
+  Rendered quotation/quotation.html.erb within layouts/application (767.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 1042ms (Views: 711.4ms | ActiveRecord: 249.4ms)
+
+
+Started GET "/quotation/ps2" for ::1 at 2019-11-05 23:44:30 +0700
+Processing by QuotationController#ps2 as HTML
+  Rendering quotation/ps2.html.erb within layouts/application
+  Rendered quotation/ps2.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 57ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-05 23:44:32 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.3ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:29
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:57
+  Rendered quotation/quotation.html.erb within layouts/application (17.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 80ms (Views: 74.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:44:35 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 58ms (Views: 55.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:45:13 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.2ms)
+Completed 200 OK in 49ms (Views: 47.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/site/news_page" for ::1 at 2019-11-05 23:45:15 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/site/site/news_page"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/site/index" for ::1 at 2019-11-05 23:45:25 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 58ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/site/news_page" for ::1 at 2019-11-05 23:45:27 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/site/site/news_page"):
+  
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/site/index" for ::1 at 2019-11-05 23:45:29 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.6ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:48:06 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/site/news_page" for ::1 at 2019-11-05 23:48:08 +0700
+Processing by SiteController#news_page as HTML
+  Rendering site/news_page.html.erb within layouts/application
+  Rendered site/news_page.html.erb within layouts/application (4.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 900ms (Views: 72.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:48:43 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/site/news_page" for ::1 at 2019-11-05 23:48:44 +0700
+Processing by SiteController#news_page as HTML
+  Rendering site/news_page.html.erb within layouts/application
+  Rendered site/news_page.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 226ms (Views: 46.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-05 23:49:04 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (1.0ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:29
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:57
+  Rendered quotation/quotation.html.erb within layouts/application (16.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 71ms (Views: 65.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/sql" for ::1 at 2019-11-05 23:49:07 +0700
+Processing by QuotationController#sql as HTML
+  Rendering quotation/sql.html.erb within layouts/application
+  Rendered quotation/sql.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.6ms)
+Completed 200 OK in 85ms (Views: 63.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-05 23:49:19 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 60ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:50:08 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/document" for ::1 at 2019-11-05 23:50:09 +0700
+Processing by QuotationController#Document as HTML
+  Rendering quotation/Document.html.erb within layouts/application
+  Rendered quotation/Document.html.erb within layouts/application (13.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.7ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/site/index" for ::1 at 2019-11-05 23:50:10 +0700
+Processing by SiteController#index as HTML
+  Rendering site/index.html.erb within layouts/application
+  Rendered site/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.2ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
