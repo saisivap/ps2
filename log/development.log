@@ -20111,3 +20111,13 @@ Processing by ProjectController#index as HTML
 Completed 200 OK in 8929ms (Views: 8863.7ms | ActiveRecord: 6.3ms)
 
 
+Started GET "/" for ::1 at 2019-11-06 00:27:52 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+Completed 200 OK in 1858ms (Views: 1848.7ms | ActiveRecord: 1.8ms)
+
+
