@@ -20099,3 +20099,15 @@ Processing by SiteController#index as HTML
 Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2019-11-06 00:21:56 +0700
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8501.3ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+Completed 200 OK in 8929ms (Views: 8863.7ms | ActiveRecord: 6.3ms)
+
+
