@@ -4,7 +4,7 @@
   <div class="ui container">
 <div class="ui column" id="mahesh">
   <h1 style="color:white;font-weight: bold;text-align: center;font-family: 'Courier New'">Welcome To TimeOut</h1>
-<div class="ui five column grid " >
+<div class="ui six column grid " >
 <!--  <div ><h3>Welcome To TimeOut</h3></div>-->
   <div class="column"></div>
 
@@ -32,7 +32,7 @@
   </div>
   <div class="column">
     <div class="ui segment" style="height:100%;width:100%">
-<!--      <img>-->
+      <!--      <img>-->
       <%= link_to root_path do %>
         <%= image_tag "avatar2/coffee1.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
         <div class="middle">
@@ -41,6 +41,19 @@
       <% end %>
     </div>
   </div>
+  <% if user_signed_in? and current_user.admin="true" %>
+  <div class="column">
+    <div class="ui segment" style="height:100%;width:100%">
+<!--      <img>-->
+      <%= link_to new_item_path do %>
+        <%= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+        <div class="middle">
+          <div class="text">Add New Items</div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+    <%end %>
   <div class="column"></div>
 </div>
 </div>

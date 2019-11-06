@@ -20253,3 +20253,872 @@ Processing by ProjectController#index as HTML
 Completed 200 OK in 84ms (Views: 77.4ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for ::1 at 2019-11-06 14:18:18 +0700
+  [1m[35m (25.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (764.7ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+Completed 200 OK in 1055ms (Views: 1020.9ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 14:18:21 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+Completed 200 OK in 144ms (Views: 139.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 14:18:24 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 86ms (Views: 76.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 14:18:27 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 87ms (Views: 80.8ms | ActiveRecord: 0.9ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (95.2ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = $1, "admin" = $2 WHERE "users"."id" = $3[0m  [["updated_at", "2019-11-06 08:35:02.060576"], ["admin", true], ["id", 2]]
+  [1m[35m (63.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-11-06 15:41:41 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (137.4ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 3.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Class:0x000055d23fe3f528>
+Did you mean?  ids):
+    30:       <% end %>
+    31:     </div>
+    32:   </div>
+    33:   <% if user_signed_in? and current_user==User.id %>
+    34:   <div class="column">
+    35:     <div class="ui segment" style="height:100%;width:100%">
+    36: <!--      <img>-->
+  
+app/views/project/index.html.erb:33:in `_app_views_project_index_html_erb___1743604139933402792_69818552624060'
+Started GET "/" for ::1 at 2019-11-06 15:41:51 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-11-06 15:42:03 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"a5YtWkLvhV4Frev3unH+vljoq1NZFX9NgdtNkuXu1lu1QT+IrRsoaVu7R7hB4oiyya/mpnZPKSH2lsvALJDgMA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 276ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:42:03 +0700
+Processing by ProjectController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2019-11-06 15:42:03 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (233.7ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+Completed 200 OK in 302ms (Views: 300.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2019-11-06 15:42:11 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CLbMQvjo+gE4X5IDVEu0Xfn361EhvlIbshh86A3h2nrgyDnW/rqWtTWBH3mfT7rHK1dBiV9xz4ubw8uPzzyG0A==", "user"=>{"email"=>"kitty@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (56.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "kitty@gmail.com"], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 557ms (ActiveRecord: 56.6ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:42:12 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:42:50 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (176.1ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin?' for #<#<Class:0x000055d2407616d8>:0x00007effd0390bd0>
+Did you mean?  is_a?):
+    30:       <% end %>
+    31:     </div>
+    32:   </div>
+    33:   <% if user_signed_in? and current_user==is_admin? %>
+    34:   <div class="column">
+    35:     <div class="ui segment" style="height:100%;width:100%">
+    36: <!--      <img>-->
+  
+app/views/project/index.html.erb:33:in `_app_views_project_index_html_erb___1743604139933402792_69818587580920'
+Started GET "/" for ::1 at 2019-11-06 15:43:11 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `is_admin?' for #<User:0x00007effd54eb250>
+Did you mean?  is_a?):
+    30:       <% end %>
+    31:     </div>
+    32:   </div>
+    33:   <% if user_signed_in? and current_user.is_admin? %>
+    34:   <div class="column">
+    35:     <div class="ui segment" style="height:100%;width:100%">
+    36: <!--      <img>-->
+  
+app/views/project/index.html.erb:33:in `_app_views_project_index_html_erb___1743604139933402792_69818630229480'
+Started GET "/" for ::1 at 2019-11-06 15:43:40 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:45:06 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:47:17 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (2285.4ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+Completed 200 OK in 2403ms (Views: 2396.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:47:34 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+Completed 200 OK in 91ms (Views: 86.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:47:37 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (8.2ms)
+Started GET "/" for ::1 at 2019-11-06 15:47:37 +0700
+Started GET "/" for ::1 at 2019-11-06 15:47:37 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (5.6ms)
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 183ms (Views: 180.2ms | ActiveRecord: 0.2ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 132ms (Views: 127.9ms | ActiveRecord: 1.0ms)
+
+
+  Rendered layouts/_navigation.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 137.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 15:47:40 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20191106085934)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1301.4ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "description" text, "category" character varying, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191106085934_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191106085934"]]
+  ↳ bin/rails:9
+  [1m[35m (50.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (31.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20191106085934)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (35.1ms)[0m  [1m[35mDROP TABLE "items"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20191106085934"]]
+  ↳ bin/rails:9
+  [1m[35m (47.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20191106085934)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (456.6ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "description" text, "category" character varying, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191106085934_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191106085934"]]
+  ↳ bin/rails:9
+  [1m[35m (26.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20191106085934)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[35mDROP TABLE "items"[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20191106085934"]]
+  ↳ bin/rails:9
+  [1m[35m (116.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateItems (20191106112201)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (187.2ms)[0m  [1m[35mCREATE TABLE "items" ("id" bigserial primary key, "name" character varying, "description" text, "category" character varying, "price" float, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20191106112201_create_items.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191106112201"]]
+  ↳ bin/rails:9
+  [1m[35m (27.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(8722248891906235875)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2019-11-06 18:32:09 +0700
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+Completed 200 OK in 1383ms (Views: 1364.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:32:14 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (21.6ms)
+  Rendered items/new.html.erb within layouts/application (22.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.7ms)
+Completed 200 OK in 126ms (Views: 89.0ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/quotation/ps2" for ::1 at 2019-11-06 18:33:55 +0700
+Processing by QuotationController#ps2 as HTML
+  Rendering quotation/ps2.html.erb within layouts/application
+  Rendered quotation/ps2.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (3.7ms)
+Completed 200 OK in 97ms (Views: 72.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/quotation" for ::1 at 2019-11-06 18:33:56 +0700
+Processing by QuotationController#quotation as HTML
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (2.5ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:29
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:57
+  Rendered quotation/quotation.html.erb within layouts/application (53.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 192ms (Views: 119.8ms | ActiveRecord: 11.5ms)
+
+
+Started POST "/quotation" for ::1 at 2019-11-06 18:34:24 +0700
+Processing by QuotationController#quotation as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4JEpq4mRG7G5sJk8P5f2EKMKItPvRh2xZBdKJlr64CSqZoO5gCt9s5KtT7Bxk6a22F4ibiCig/DXElfWhKY5g==", "quotation"=>{"author_name"=>"Mahesh", "category2"=>"", "category"=>"New Category", "quote"=>"this is my new category"}, "commit"=>"Create"}
+Unpermitted parameter: :category2
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[36mQuotation Create (239.0ms)[0m  [1m[32mINSERT INTO "quotations" ("author_name", "category", "quote", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["author_name", "Mahesh"], ["category", "New Category"], ["quote", "this is my new category"], ["created_at", "2019-11-06 11:34:24.479887"], ["updated_at", "2019-11-06 11:34:24.479887"]]
+  ↳ app/controllers/quotation_controller.rb:16
+  [1m[35m (131.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/quotation_controller.rb:16
+  Rendering quotation/quotation.html.erb within layouts/application
+  [1m[36mQuotation Load (0.9ms)[0m  [1m[34mSELECT "quotations".* FROM "quotations" ORDER BY "quotations"."category" ASC[0m
+  ↳ app/views/quotation/quotation.html.erb:29
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/quotation/quotation.html.erb:57
+  Rendered quotation/quotation.html.erb within layouts/application (19.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (1.8ms)
+Completed 200 OK in 457ms (Views: 73.7ms | ActiveRecord: 373.2ms)
+
+
+Started GET "/" for ::1 at 2019-11-06 18:36:06 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:36:09 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "quotations"."category" FROM "quotations"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (11.7ms)
+  Rendered items/new.html.erb within layouts/application (14.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (2.6ms)
+Completed 200 OK in 96ms (Views: 91.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 18:41:11 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdT6XqewsZkYh3d72mQuVvH22r9gG2S98WQJvnZaBxWRlpikWRP/AyHm2ddl1hNgP1NWX4jG30to4lZ1VvBIRw==", "item"=>{"name"=>"Rice", "description"=>"this is good rice", "category2"=>"rabbit", "category"=>"", "price"=>"120"}, "commit"=>"Create Item"}
+Completed 500 Internal Server Error in 203792ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:28:in `create'
+Started POST "/items" for ::1 at 2019-11-06 18:44:52 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k8lnkgAwzKIIqee+6jTZ36m3F74akIH12OKj0yWsdC51Iso0ZuWV9eSb7rtwa8QTzL9Lha1YwbAIL7qozzRxWg==", "item"=>{"name"=>"Rice", "description"=>"this is good rice", "category2"=>"rabbit", "category"=>"hey", "price"=>"120"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 41657ms (ActiveRecord: 6.6ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started POST "/items" for ::1 at 2019-11-06 18:45:42 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k8lnkgAwzKIIqee+6jTZ36m3F74akIH12OKj0yWsdC51Iso0ZuWV9eSb7rtwa8QTzL9Lha1YwbAIL7qozzRxWg==", "item"=>{"name"=>"Rice", "description"=>"this is good rice", "category2"=>"rabbit", "category"=>"", "price"=>"120"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 12453ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started GET "/" for ::1 at 2019-11-06 18:46:56 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (93.6ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+Completed 200 OK in 2366ms (Views: 2051.2ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:47:01 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (120.0ms)
+  Rendered items/new.html.erb within layouts/application (131.8ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (36.4ms)
+Completed 200 OK in 2135ms (Views: 2110.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 18:47:31 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a6InW+FZw845zop8Rnu4AjYqn5Av1YVCGedUeDjaz0Jf4EWhH/qNVACvJND5yYU0+I8TcMcIPrSAYQuzGHCAEA==", "item"=>{"name"=>"Rice", "description"=>"hey this is description", "category2"=>"", "category"=>"hey", "price"=>"120"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 26367ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started POST "/items" for ::1 at 2019-11-06 18:48:03 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"X4DHqYJsG7nJzVaNei2cNnWNsva4YXFDNZ3RGr0WGBu5a2oP5LlC7iX/X4jgcoH6EIXuzQ+pMQblUMhhV44dbw==", "item"=>{"name"=>"Rice", "description"=>"hey this is description", "category2"=>"", "category"=>"hey", "price"=>"120"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 82143ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started GET "/items/new" for ::1 at 2019-11-06 18:49:31 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (132.0ms)
+  Rendered items/new.html.erb within layouts/application (142.5ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (28.0ms)
+Completed 200 OK in 2026ms (Views: 1995.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 18:49:55 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vR2BYyn+J1tdHywxQM5YOn4zCgml07MuDCp2wvy36TNb9izFTyt+DLEtJTTakUX2GztWMhIb82vc52+5Fi/sRw==", "item"=>{"name"=>"Rice", "description"=>"this is description", "category2"=>"", "category"=>"Hey ", "price"=>"15"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 91237ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started POST "/items" for ::1 at 2019-11-06 18:51:38 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vR2BYyn+J1tdHywxQM5YOn4zCgml07MuDCp2wvy36TNb9izFTyt+DLEtJTTakUX2GztWMhIb82vc52+5Fi/sRw==", "item"=>{"name"=>"Rice", "description"=>"this is description", "category2"=>"", "category"=>"Hey ", "price"=>"15"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:37
+  [1m[36mItem Create (6.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rice"], ["description", "this is description"], ["category", "Hey "], ["price", 15.0], ["created_at", "2019-11-06 11:51:40.963279"], ["updated_at", "2019-11-06 11:51:40.963279"]]
+  ↳ app/controllers/items_controller.rb:37
+  [1m[35m (50.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:37
+Redirected to http://localhost:3000/items/1
+Completed 302 Found in 315ms (ActiveRecord: 62.9ms)
+
+
+Started GET "/items/1" for ::1 at 2019-11-06 18:51:41 +0700
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:74
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (12.5ms)
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (185.2ms)
+Completed 200 OK in 1516ms (Views: 1466.1ms | ActiveRecord: 10.6ms)
+
+
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" ORDER BY "items"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2019-11-06 18:52:12 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (90.5ms)
+  Rendered layouts/_navigation.html.erb (10.9ms)
+Completed 200 OK in 2043ms (Views: 1987.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:28 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (108.3ms)
+  Rendered items/new.html.erb within layouts/application (120.6ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (39.6ms)
+Completed 200 OK in 2265ms (Views: 2236.7ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:44 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (95.5ms)
+  Rendered items/new.html.erb within layouts/application (101.6ms)
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:46 +0700
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (207.3ms)
+Completed 200 OK in 2004ms (Views: 1853.2ms | ActiveRecord: 22.5ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:49 +0700
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:49 +0700
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:49 +0700
+Processing by ItemsController#new as HTML
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+Processing by ItemsController#new as HTML
+  [1m[35m (32.2ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  Rendering items/new.html.erb within layouts/application
+  ↳ app/views/items/_form.html.erb:25
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  Rendering items/new.html.erb within layouts/application
+  Rendered items/_form.html.erb (153.9ms)
+  Rendered items/new.html.erb within layouts/application (276.5ms)
+  [1m[35m (62.2ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  [1m[35m (56.1ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  [1m[35m (14.1ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (185.2ms)
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (214.7ms)
+  Rendered items/_form.html.erb (245.2ms)
+  Rendered items/new.html.erb within layouts/application (355.8ms)
+  Rendered items/new.html.erb within layouts/application (314.8ms)
+  Rendered items/new.html.erb within layouts/application (363.8ms)
+Started GET "/items/new" for ::1 at 2019-11-06 18:52:51 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (15.2ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (234.4ms)
+  Rendered items/new.html.erb within layouts/application (254.3ms)
+  [1m[36mUser Load (56.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (588.5ms)
+Completed 200 OK in 7817ms (Views: 7097.9ms | ActiveRecord: 569.4ms)
+
+
+  [1m[36mUser Load (37.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (137.4ms)
+Completed 200 OK in 7890ms (Views: 7718.3ms | ActiveRecord: 158.5ms)
+
+
+  [1m[36mUser Load (71.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (362.4ms)
+Completed 200 OK in 8310ms (Views: 8129.9ms | ActiveRecord: 166.6ms)
+
+
+  [1m[36mUser Load (111.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (171.1ms)
+Completed 200 OK in 9160ms (Views: 8979.4ms | ActiveRecord: 140.6ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (47.0ms)
+Completed 200 OK in 6840ms (Views: 6761.9ms | ActiveRecord: 17.5ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 18:53:07 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hpHjui0aln635H8YTtdrNCw3z/Jr8G5vmX5GBujh0wOy04FA07nY5I6F0bTxZVYC4pJDEoMt1ZkA+BnNyEucUQ==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 201331ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started GET "/items/new" for ::1 at 2019-11-06 18:56:33 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (99.3ms)
+  Rendered items/new.html.erb within layouts/application (104.6ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (201.9ms)
+Completed 200 OK in 1919ms (Views: 1779.9ms | ActiveRecord: 14.1ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 18:56:41 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9IENltBMC4153TkmwL0W1XSbk107W+Mvpj0fmA6nTTdOamQPZRpednVfeEBXemXMNoydsMlL8luVe0FiqKYQA==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category2' for Item.):
+  
+app/controllers/items_controller.rb:28:in `create'
+Started POST "/items" for ::1 at 2019-11-06 18:58:21 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9IENltBMC4153TkmwL0W1XSbk107W+Mvpj0fmA6nTTdOamQPZRpednVfeEBXemXMNoydsMlL8luVe0FiqKYQA==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 5.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'category2' for Item.):
+  
+app/controllers/items_controller.rb:28:in `create'
+Started POST "/items" for ::1 at 2019-11-06 19:03:43 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9IENltBMC4153TkmwL0W1XSbk107W+Mvpj0fmA6nTTdOamQPZRpednVfeEBXemXMNoydsMlL8luVe0FiqKYQA==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 83421ms (ActiveRecord: 18.1ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started POST "/items" for ::1 at 2019-11-06 19:05:08 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9IENltBMC4153TkmwL0W1XSbk107W+Mvpj0fmA6nTTdOamQPZRpednVfeEBXemXMNoydsMlL8luVe0FiqKYQA==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 34904ms (ActiveRecord: 0.0ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:36:in `create'
+Started POST "/items" for ::1 at 2019-11-06 19:05:52 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O9IENltBMC4153TkmwL0W1XSbk107W+Mvpj0fmA6nTTdOamQPZRpednVfeEBXemXMNoydsMlL8luVe0FiqKYQA==", "item"=>{"name"=>"Rice", "description"=>"this is rice", "category2"=>"Hey ", "category"=>"", "price"=>"12"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+Completed 500 Internal Server Error in 186709ms (ActiveRecord: 14.8ms)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/items_controller.rb:37:in `create'
+Started GET "/" for ::1 at 2019-11-06 19:09:06 +0700
+Processing by ProjectController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ /home/paruchuri/.rbenv/versions/2.6.3/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendering project/index.html.erb within layouts/application
+  Rendered project/index.html.erb within layouts/application (97.9ms)
+  Rendered layouts/_navigation.html.erb (13.4ms)
+Completed 200 OK in 2500ms (Views: 2159.0ms | ActiveRecord: 15.6ms)
+
+
+Started GET "/items/new" for ::1 at 2019-11-06 19:09:14 +0700
+Processing by ItemsController#new as HTML
+  Rendering items/new.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  ↳ app/views/items/_form.html.erb:25
+  Rendered items/_form.html.erb (102.1ms)
+  Rendered items/new.html.erb within layouts/application (120.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (44.6ms)
+Completed 200 OK in 2262ms (Views: 2129.5ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/items" for ::1 at 2019-11-06 19:10:00 +0700
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qvG2Su69ugyNqKyXQrZw5OlqpoyWshe4ltZX1QLko5Oes9SwEB70lrTJAjv9BE3SJ88qbH5vrE4PUAgeIk7swQ==", "item"=>{"name"=>"Green Ice cream", "description"=>"Its too good ", "category2"=>"", "category"=>"Ice Cream", "price"=>"25"}, "commit"=>"Create Item"}
+Unpermitted parameter: :category2
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/items_controller.rb:38
+  [1m[36mItem Create (1.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "description", "category", "price", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Green Ice cream"], ["description", "Its too good "], ["category", "Ice Cream"], ["price", 25.0], ["created_at", "2019-11-06 12:10:00.121881"], ["updated_at", "2019-11-06 12:10:00.121881"]]
+  ↳ app/controllers/items_controller.rb:38
+  [1m[35m (141.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/items_controller.rb:38
+Redirected to http://localhost:3000/items/2
+Completed 302 Found in 255ms (ActiveRecord: 143.8ms)
+
+
+Started GET "/items/2" for ::1 at 2019-11-06 19:10:00 +0700
+Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/items_controller.rb:75
+  Rendering items/show.html.erb within layouts/application
+  Rendered items/show.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (27.6ms)
+Completed 200 OK in 1547ms (Views: 1504.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/index" for ::1 at 2019-11-06 19:11:58 +0700
+Processing by QuotationController#index as HTML
+Completed 500 Internal Server Error in 396ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/quotation_controller.rb:31:in `index'
+Started GET "/items/" for ::1 at 2019-11-06 19:12:36 +0700
+Processing by ItemsController#index as HTML
+  Rendering items/index.html.erb within layouts/application
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  ↳ app/views/items/index.html.erb:17
+  Rendered items/index.html.erb within layouts/application (43.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navigation.html.erb:12
+  Rendered layouts/_navigation.html.erb (27.2ms)
+Completed 200 OK in 1598ms (Views: 1548.0ms | ActiveRecord: 1.8ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "items"."category" FROM "items"[0m
