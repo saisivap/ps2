@@ -1,0 +1,85 @@
+<!--<div class="ui container">-->
+<!--  <div class="ui placeholder segment">-->
+<!--    <div class="ui two column very relaxed stackable grid">-->
+<!--      <p id="notice"><%#= notice %></p>-->
+<!--      <div class="column">-->
+
+
+<!--          <p>-->
+          <%#= image_tag(@category.image,:width => 100, :height => 100) %>
+
+<!--          </p>-->
+
+<!--          <%#= link_to 'Edit', edit_category_path(@category) %> |-->
+          <%#= link_to 'Back', categories_path %>
+<!--      </div>-->
+<!--      <div class=" column">-->
+<!--        <div class="ui card">-->
+<!--          <div class="card">-->
+<!--            <div class="content">-->
+<!--              <div class="header"><%#= @category.name %></div>-->
+<!--              <div class="meta">Friend</div>-->
+<!--              <div class="description">-->
+<!--                Elliot Fu is a film-maker from New York.-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        <strong>Name:</strong>-->
+        <%#= @category.name %>
+<!--      </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="ui vertical divider">-->
+<!--      Or-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+<div class="ui container">
+<div class="ui segment">
+  <div class="ui two column very relaxed grid">
+    <div class="medium aligned column">
+<!--      <p></p>-->
+<!--      <p></p>-->
+<!--      <p></p>-->
+<!--      <p></p>-->
+      <div class="ui large bordered image">
+      <%= image_tag(@category.image) %>
+      </div>
+      <!--          </p>-->
+<!--<p>-->
+<!--      <%#= link_to 'Edit', edit_category_path(@category) %> |-->
+<!--      <%#= link_to 'Back', categories_path %></p>-->
+    </div>
+    <div class="column">
+<!--      <p></p>-->
+<!--      <p></p>-->
+<!--      <p></p>-->
+<!--      <p></p>-->
+      <div class="ui centered card" style="text-align: center;top:50%;left:50%;transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);border: 3px solid skyblue">
+<!--        <div class="card">-->
+          <div class="content">
+            <div class="header"><h1>Category:<%= @category.name %></h1></div>
+<!--            <div class="meta">Friend</div>-->
+            <% if user_signed_in? && current_user.admin=="true" %>
+            <div class="description">
+<!--              Elliot Fu is a film-maker from New York.-->
+<!--              <p>-->
+<!--                <button class="positive ui button"></button>-->
+                <%= link_to 'Edit', edit_category_path(@category),class:"positive ui button" %>
+                <%= link_to 'Back', categories_path ,class:"negative ui button"%>
+<!--              </p>-->
+            </div>
+              <%end %>
+<!--          </div>-->
+        </div>
+        <!--        <strong>Name:</strong>-->
+        <%#= @category.name %>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical divider">
+    Details
+  </div>
+</div>
+</div>

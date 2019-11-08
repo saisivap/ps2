@@ -14,7 +14,7 @@ class ItemsTest < ApplicationSystemTestCase
     visit items_url
     click_on "New Item"
 
-    fill_in "Category", with: @item.category
+    fill_in "Category", with: @item.category_id
     fill_in "Description", with: @item.description
     fill_in "Name", with: @item.name
     fill_in "Price", with: @item.price
@@ -28,7 +28,7 @@ class ItemsTest < ApplicationSystemTestCase
     visit items_url
     click_on "Edit", match: :first
 
-    fill_in "Category", with: @item.category
+    fill_in "Category", with: @item.category_id
     fill_in "Description", with: @item.description
     fill_in "Name", with: @item.name
     fill_in "Price", with: @item.price

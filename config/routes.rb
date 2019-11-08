@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :items
+  # resources :categories
+  # resources :items
   get 'project/index'
   devise_for :users,path: '',path_names: { sign_in: 'login', sign_out: 'logout'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -30,8 +31,15 @@ Rails.application.routes.draw do
   get 'document',to:'quotation#Document'
 
 
-  root "project#index" do
+  # root "project#index" do
+
+  # end
+  root "categories#index"
+  resources :categories do
     resources :items
-  end
+    end
+  # resources :items do
+  #   resources :categories
+  # end
 
 end

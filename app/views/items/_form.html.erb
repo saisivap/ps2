@@ -1,4 +1,6 @@
-<%= form_with(model: @item, local: true) do |form| %>
+<div class="ui form">
+<%#= form_with(model: item, local: true) do |form| %>
+<%= form_with(model: [@item], local: true, url: category_item_path) do |form| %>
   <% if item.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
@@ -18,17 +20,19 @@
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-  <div class="form_row">
-    <%= form.label :"New Category" %>
-    <%= form.select :category2, Item.pluck(:category).uniq,include_blank: true %>
-  </div>
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category %>
+    <%= form.text_area :description ,placeholder: "Description of the item"%>
   </div>
 
+  <div class="field">
+    <%= form.label :category_id %>
+    <%#= form.text_field :category_id %>
+    <%= text_field_tag(Category,value=Category.find(params["category_id"]).name,disabled: true) %>
+  </div>
+  <%#= Category.find(params["category_id"]).name %>
+    <div class="field">
+      <%= form.label :image,"Image" %>
+      <%= form.file_field :image ,class:"ui button"%>
+    </div>
   <div class="field">
     <%= form.label :price %>
     <%= form.text_field :price %>
@@ -37,4 +41,6 @@
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
+</div>
