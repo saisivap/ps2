@@ -1,6 +1,55 @@
 <h1>Editing Item</h1>
 
-<%= render 'form', item: @item %>
+<%#= render 'form', item: @item %>
+
+<div class="ui form">
+<%#= form_with(model: item, local: true) do |form| %>
+<%= form_for @item,url:{action: "update"} do |form| %>
+  <%#= form_with(model: [@item], local: true, url: category_items_path) do |form| %>
+<%#= form_with model: [@item] ,url: category_item_path(@item) do  |form| %>
+    <% if @item.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+        <ul>
+          <% @item.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :description %>
+      <%= form.text_area :description ,placeholder: "Description of the item"%>
+    </div>
+
+    <div class="field">
+      <%= form.label :category_id %>
+      <%#= form.text_field :category_id %>
+      <%= text_field_tag(Category,value=Category.find(params["category_id"]).name,disabled: true) %>
+    </div>
+    <%#= Category.find(params["category_id"]).name %>
+    <div class="field">
+      <%= form.label :image,"Image" %>
+      <%= form.file_field :image ,class:"ui button"%>
+    </div>
+    <div class="field">
+      <%= form.label :price %>
+      <%= form.text_field :price %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
+    </div>
+
+  <% end %>
+</div>
 
 <%= link_to 'Show', category_item_path(@item) %> |
 <%= link_to 'Back', category_items_path %>

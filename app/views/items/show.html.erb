@@ -26,13 +26,13 @@
 
 
 
-<div class="ui container">
+<div class="ui container" style="top: 50%;transform: translateY(50%)">
   <div class="ui  segment" style="background-color: #1B1C1D;">
 <!--<div class="ui divider"></div>-->
   <div class="ui two column padded grid">
     <div class="column">
 
-      <div class="ui centered card">
+      <div class="ui centered card" style="text-align: center;top: 50%;transform: translate(0%, -50%);">
 <!--        <div class="image">-->
           <div class="ui medium rounded image">
             <%= image_tag(@item.image) %>
@@ -47,7 +47,7 @@
 
     </div>
     <div class="column">
-      <div class="ui centered card" style="text-align: center">
+      <div class="ui centered card" style="text-align: center;top: 50%;transform: translate(0%, -50%);">
         <div class="header">
           <h2>Item:<%= @item.name %></h2>
           <h3>Category:<%= @item.category.name %></h3>
@@ -68,10 +68,10 @@
 <!--            <div class="tiny ui danger button"><h2>Back</h2></div>-->
             <h2><%= link_to 'Back', category_items_path ,class:"small ui grey button"%></h2>
           </div>
-          <% if user_signed_in? && current_user.admin=="true" %>
+          <% if user_signed_in? && current_user.admin==true %>
           <div class="center floated like" data-tooltip="Back for more items" data-position="bottom right">
             <!--            <div class="tiny ui danger button"><h2>Back</h2></div>-->
-            <h2><%=link_to 'Edit', edit_category_item_path(@item) ,class:"small ui red button"%></h2>
+            <h2><%=link_to 'Edit', edit_category_item_path(params["category_id"],@item) ,class:"small ui red button"%></h2>
           </div>
             <%end %>
         </div>
@@ -80,3 +80,5 @@
   </div>
 </div>
 </div>
+
+

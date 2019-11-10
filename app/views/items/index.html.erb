@@ -31,35 +31,231 @@
 <!--<br>-->
 
 <%#= link_to 'New Item', new_category_item_path %>
-<div class="ui container">
-  <div class="ui four cards">
-    <div class="column">
-      <div class="card">
-        <div class="ui medium rounded image">
+<!--<div class="ui container fluid" id="bg1">-->
+<!--<div class="ui container">-->
+<!--  <div class="ui four column grid">-->
+<!--    <div class="column">-->
+<!--      <div class="card" style="height:100%;width:100%">-->
+<!--        <div class="ui medium rounded image">-->
           <%#= image_tag(@item.image) %>
-          <%= link_to new_category_item_path do %>
-            <%= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
-            <div class="middle">
-              <div class="text">Add New Items</div>
-            </div>
-          <% end %>
-        </div>
-      </div>
-    </div>
-    <% @items.each do |item| %>
-    <div class="column">
-      <div class="card">
-        <div class="ui medium rounded image">
+          <%#= link_to new_category_item_path do %>
+            <%#= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+<!--            <div class="middle">-->
+<!--              <div class="text">Add New Items</div>-->
+<!--            </div>-->
+          <%# end %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <%# @items.each do |item| %>
+<!--    <div class="column">-->
+<!--      <div class="card" style="height:100%;width:100%">-->
+<!--        <div class="ui medium rounded image">-->
           <%#= image_tag(@item.image) %>
-          <%= link_to category_item_path(params["category_id"],item) do %>
-            <%= image_tag(item.image, :class=> "ui medium image",style: "height:100%;width:100%")  %>
-            <div class="middle">
-              <div class="text">Add New Items</div>
-            </div>
-          <% end %>
+          <%#= link_to category_item_path(params["category_id"],item) do %>
+            <%#= image_tag(item.image, :class=> "ui medium image",style: "height:100%;width:100%")  %>
+<!--            <div class="middle">-->
+<!--              <div class="text">Add New Items</div>-->
+<!--            </div>-->
+          <%# end %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+      <%#end %>
+<!--  </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body style="background: #250008;">
+<div class="ui container fluid" >
+  <!--<div class="ui container fluid" id="bg">-->
+  <div class="ui container">
+    <h1 style="color:white;font-weight: bold;text-align: center;font-family: 'Courier New';margin-top:5%"><%=Category.find(params['category_id']).name %></h1>
+    <div class="ui grid" id="maheshitems">
+
+
+      <%# if user_signed_in? && current_user.admin="true" %>
+      <% if user_signed_in? and current_user.admin==true %>
+        <div class="four wide column" style="height:259.75px;width:100%">
+          <div class="ui segment" style="height:100%;width:100%">
+            <!--                  <img>-->
+            <%=  link_to new_category_item_path do %>
+              <%= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+              <div class="middle">
+                <div class="text">Add New Items</div>
+              </div>
+            <% end %>
+          </div>
         </div>
-      </div>
-    </div>
       <%end %>
+
+
+
+      <% @items.each do |item| %>
+        <div class="four wide column" style="height:270px;width:100%" >
+          <div class="card1" style="height:100%;width:100%;background: #000;">
+            <!--                  <img>-->
+            <%#= link_to category do %>
+            <%= link_to category_item_path(params["category_id"],item) do %>
+              <%#= image_tag(@category.image) %>
+              <%= image_tag(item.image, :class=> "ui medium rounded image",style: "height:100%;width:100%")  %>
+              <div class="middle1">
+                <div class="text1">
+                  <h3> <%= item.name %><br/><span><%= item.category.name %></span></h3><br/>
+
+                  <div class="content">
+                    <div class="small ui green button" data-tooltip="price" data-position="bottom center">
+                      <span>&#3647;</span><%= item.price %>
+                    </div><br/>
+<!--                          <div class="small ui primary button">Book</div>-->
+                      <%#= link_to 'Book',category_item_path(params["category_id"],item) , class="small ui primary button" %>
+                      <% if user_signed_in? and current_user.admin==true  %>
+                        <div class="left floated " data-tooltip="Delete item" data-position="bottom left">
+                            <%= link_to 'Destroy', category_item_path(params["category_id"],item), method: :delete, data: { confirm: 'Are you sure?' } ,class:"small ui red button"%>
+                        </div>
+                      <%else %>
+                        <div class="left floated " data-tooltip="Book item" data-position="bottom left">
+                            <h2><%=link_to 'Book', category_item_path(params["category_id"],item) ,class:"small ui primary button"%></h2>
+                        </div>
+                      <%end %>
+
+
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </div>
+
+        </div>
+      <%end %>
+
+
+    </div>
   </div>
 </div>
+
+
+</body>
+</html>
+
+
+<!--<style>-->
+
+<!--body {-->
+<!--margin: 0;-->
+<!--padding: 0;-->
+<!--background: orange;-->
+<!--font-family: sans-serif;-->
+
+<!--}-->
+<!--.card {-->
+<!--position: absolute;-->
+<!--top: 0%;-->
+<!--left: 0%;-->
+<!--transform: translate(0%,0%);-->
+<!--width: 250px;-->
+<!--height: 300px;-->
+<!--background: #000;-->
+<!--/*box-shadow: 0px 7px 10px rgba(black, 15)*/-->
+<!--}-->
+<!--.card .image {-->
+<!--width: 100%;-->
+<!--height: 100%;-->
+<!--overflow: hidden;-->
+<!--/*   box-shadow: 0px 7px 10px rgba(black, 15) */-->
+<!--}-->
+<!--.card .image img {-->
+<!--width: 100%;-->
+<!--transition: .5s;-->
+<!--}-->
+<!--.card:hover .image img {-->
+<!--opacity: .5;-->
+<!--transform: translateX(30%);/*100%*/-->
+<!--}-->
+<!--.card .details {-->
+<!--position: absolute;-->
+<!--top: 0;-->
+<!--left: 0;-->
+<!--width: 70%;/*100%*/-->
+<!--height: 100%;-->
+<!--background: #ffc107;-->
+<!--transition: .5s;-->
+<!--transform-origin: left;-->
+<!--transform: perspective(2000px) rotateY(-90deg);-->
+<!--}-->
+<!--.card:hover .details {-->
+<!--transform: perspective(2000px) rotateY(0deg);-->
+<!--}-->
+<!--.card .details .center {-->
+<!--padding: 20px;-->
+<!--text-align: center;-->
+<!--background: #fff;-->
+<!--position: absolute;-->
+<!--top: 50%;-->
+<!--transform: translateY(-50%);-->
+<!--}-->
+<!--.card .details .center h1 {-->
+<!--margin: 0;-->
+<!--padding: 0;-->
+<!--color: #ff3636;-->
+<!--line-height: 20px;-->
+<!--font-size: 20px;-->
+<!--text-transform: uppercase;-->
+<!--}-->
+<!--.card .details .center h1 span {-->
+<!--font-size: 14px;-->
+<!--color: #262626;-->
+<!--}-->
+<!--.card .details .center p {-->
+<!--margin: 10px 0;-->
+<!--padding: 0;-->
+<!--color: #262626;-->
+<!--}-->
+<!--</style>-->
+
+<!--<div class="ui container">-->
+<!--  <div class="ui  column grid">-->
+<!--    <div class="column">-->
+<!--      <div class="card">-->
+<!--        <div class="image">-->
+          <%#=  link_to new_category_item_path do %>
+            <%#= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+<!--            <div class="details">-->
+<!--              <div class="center">-->
+<!--              <h1>Add Items</h1>-->
+<!--            </div>-->
+<!--            </div>-->
+          <%# end %>
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+    <%# @items.each do |item| %>
+<!--      <div class="column">-->
+<!--        <div class="card">-->
+<!--          <div class="image">-->
+            <%#=  link_to category_item_path(params["category_id"],item) do %>
+              <%#= image_tag(item.image, :class=> "ui medium image",style: "height:100%;width:100%") %>
+<!--              <div class="details">-->
+<!--                <div class="center">-->
+<!--                  <h1>Add Items</h1>-->
+<!--                </div>-->
+<!--              </div>-->
+            <%# end %>
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+    <%#end %>
+<!--  </div>-->
+<!--</div>-->
