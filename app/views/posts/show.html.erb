@@ -1,0 +1,70 @@
+<!--<p id="notice"><%#= notice %></p>-->
+
+<!--<p>-->
+<!--  <strong>Description:</strong>-->
+  <%#= @post.description %>
+<!--</p>-->
+
+<!--<p>-->
+<!--  <strong>User:</strong>-->
+  <%# if @post.user.image.attached? %>
+    <%#= @post.user.image %>
+    <%#else %>
+      <%# image.tag 'avatar2' %>
+    <%#= image_tag "avatar2/user_blank_pic.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+    <%#end %>
+<!--</p>-->
+<!--<p>-->
+  <%#= image_tag(@post.image)%>
+<!--</p>-->
+
+<!--<%#= link_to 'Edit', edit_post_path(@post) %> |-->
+<%#= link_to 'Back', posts_path %>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body style="background-color: rgba(0,0,0,0.2)">
+  <div class="ui container">
+    <div class="ui centered card">
+      <div class="content">
+        <div class="right floated meta">14h</div>
+<!--        <img class="ui avatar image" src="/images/avatar/large/elliot.jpg"> Elliot-->
+            <% if @post.user.image.attached? %>
+            <%= image_tag(@post.user.image) %>
+            <%else %>
+            <%# image.tag 'avatar2' %>
+            <%= image_tag "avatar2/user_blank_pic.jpg", class: "ui avatar image"%><%= @post.user.first_name %>
+            <%end %>
+      </div>
+      <div class="image">
+<!--        <img>-->
+        <%= image_tag(@post.image, :class=> "ui medium rounded image",style: "height:100%;width:100%")  %>
+        <%#= @post.user.first_name %>
+      </div>
+      <div class="content">
+    <span class="right floated">
+      <i class="heart outline like icon"></i>
+      17 likes
+    </span>
+        <i class="comment icon"></i>
+        3 comments
+      </div>
+      <div class="content">
+        <%= @post.description %>
+      </div>
+      <div class="extra content">
+        <div class="ui large transparent left icon input">
+          <i class="heart outline icon"></i>
+          <input type="text" placeholder="Add Comment...">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
