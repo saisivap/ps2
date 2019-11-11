@@ -35,7 +35,11 @@
       <div class="ui centered card" style="text-align: center;top: 50%;transform: translate(0%, -50%);">
 <!--        <div class="image">-->
           <div class="ui medium rounded image">
+           <% if @item.image.attached? %>
             <%= image_tag(@item.image) %>
+              <%else %>
+              <%= image_tag "avatar2/coming_soon.jpg"%>
+            <%end %>
           </div>
 <!--        </div>-->
         <div class="content">

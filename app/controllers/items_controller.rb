@@ -31,6 +31,7 @@ class ItemsController < ApplicationController
     @item = Item.new(item_params)
 
     @item.category_id = params["category_id"]
+
     # debugger
     respond_to do |format|
       if @item.save

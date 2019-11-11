@@ -76,7 +76,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
-<body style="background: #250008;">
+<body id="bg">
+<!--<body style="background: #250008;">-->
 <div class="ui container fluid" >
   <!--<div class="ui container fluid" id="bg">-->
   <div class="ui container">
@@ -108,7 +109,11 @@
             <%#= link_to category do %>
             <%= link_to category_item_path(params["category_id"],item) do %>
               <%#= image_tag(@category.image) %>
+              <% if item.image.attached? %>
               <%= image_tag(item.image, :class=> "ui medium rounded image",style: "height:100%;width:100%")  %>
+                <%else %>
+                <%= image_tag "avatar2/coming_soon.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+                <%end %>
               <div class="middle1">
                 <div class="text1">
                   <h3> <%= item.name %><br/><span><%= item.category.name %></span></h3><br/>
@@ -123,6 +128,9 @@
                         <div class="left floated " data-tooltip="Delete item" data-position="bottom left">
                             <%= link_to 'Destroy', category_item_path(params["category_id"],item), method: :delete, data: { confirm: 'Are you sure?' } ,class:"small ui red button"%>
                         </div>
+                      <div class="left floated " data-tooltip="Book item" data-position="bottom left">
+                        <h2><%=link_to 'View', category_item_path(params["category_id"],item) ,class:"small ui primary button"%></h2>
+                      </div>
                       <%else %>
                         <div class="left floated " data-tooltip="Book item" data-position="bottom left">
                             <h2><%=link_to 'Book', category_item_path(params["category_id"],item) ,class:"small ui primary button"%></h2>
@@ -259,3 +267,5 @@
     <%#end %>
 <!--  </div>-->
 <!--</div>-->
+
+
