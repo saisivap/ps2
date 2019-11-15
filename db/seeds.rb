@@ -7,4 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 # User.create!([{email:'maheshait@gmail.com'},{password:'sundaypsm'},{admin:'true'}])
 
-User.create!([{email:'maheshait@gmail.com',password:'sundaypsm',password_confirmation:'sundaypsm',admin:true}])
+# User.create!([{email:'maheshait@gmail.com',password:'sundaypsm',password_confirmation:'sundaypsm',admin:true}])
