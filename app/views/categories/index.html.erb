@@ -77,7 +77,12 @@
             <%#= link_to category do %>
             <%= link_to category_items_path(category) do %>
               <%#= image_tag(@category.image) %>
-              <%= image_tag(category.image, :class=> "ui medium image",style: "height:100%;width:100%")  %>
+              <%#= image_tag(category.image, :class=> "ui medium image",style: "height:100%;width:100%")  %>
+              <% if category.image.attached? %>
+                <%= image_tag(category.image, :class=> "ui medium rounded image",style: "height:100%;width:100%")  %>
+              <%else %>
+                <%= image_tag "avatar2/coming_soon.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+              <%end %>
               <div class="middle">
                 <div class="text">Visit <%= category.name %></div>
               </div>
@@ -89,19 +94,19 @@
 
 
 
-      <% if user_signed_in? and current_user.admin==true %>
-        <div class="column" style="height:259.75px;width:192.5px">
-          <div class="ui segment" style="height:100%;width:100%">
+      <%# if user_signed_in? and current_user.admin==true %>
+<!--        <div class="column" style="height:259.75px;width:192.5px">-->
+<!--          <div class="ui segment" style="height:100%;width:100%">-->
             <!--      <img>-->
-            <%= link_to root_path do %>
-              <%= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
-              <div class="middle">
-                <div class="text">Add New Items</div>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      <%end %>
+            <%#= link_to root_path do %>
+              <%#= image_tag "avatar2/new_items.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+<!--              <div class="middle">-->
+<!--                <div class="text">Add New Items</div>-->
+<!--              </div>-->
+            <%# end %>
+<!--          </div>-->
+<!--        </div>-->
+      <%#end %>
       <!--    <div class="column">hey1</div>-->
       <!--    <div class="column">hey2</div>-->
       <!--    <div class="column"></div>-->

@@ -44,7 +44,12 @@
 <!--      <p></p>-->
 <!--      <p></p>-->
       <div class="ui large bordered image">
-      <%= image_tag(@category.image) %>
+      <%#= image_tag(@category.image) %>
+        <% if @category.image.attached? %>
+          <%= image_tag(@category.image, :class=> "ui medium rounded image",style: "height:100%;width:100%")  %>
+        <%else %>
+          <%= image_tag "avatar2/coming_soon.jpg", class: "ui medium image",style: "height:100%;width:100%" %>
+        <%end %>
       </div>
       <!--          </p>-->
 <!--<p>-->
@@ -61,7 +66,7 @@
           <div class="content">
             <div class="header"><h1>Category:<%= @category.name %></h1></div>
 <!--            <div class="meta">Friend</div>-->
-            <% if user_signed_in? && current_user.admin=="true" %>
+            <% if user_signed_in? && current_user.admin==true %>
             <div class="description">
 <!--              Elliot Fu is a film-maker from New York.-->
 <!--              <p>-->
@@ -70,6 +75,10 @@
                 <%= link_to 'Back', categories_path ,class:"negative ui button"%>
 <!--              </p>-->
             </div>
+              <%else %>
+              <div class="description">
+                <%= link_to 'Back', categories_path ,class:"negative ui button"%>
+              </div>
               <%end %>
 <!--          </div>-->
         </div>
