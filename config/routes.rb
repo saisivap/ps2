@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   # resources :categories
   # resources :items
   get 'project/index'
+
   devise_for :users,path: '',path_names: { sign_in: 'login', sign_out: 'logout'}
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   # get 'quotation' ,to: 'quotation#quotation'
@@ -35,6 +36,7 @@ Rails.application.routes.draw do
   get 'quotation/ps2'
 
   get 'document',to:'quotation#Document'
+  get 'ps4',to:'quotation#ps4'
 
 
   # root "project#index" do

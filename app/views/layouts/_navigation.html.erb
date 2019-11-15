@@ -1,56 +1,112 @@
+<% if user_signed_in? %>
+  <a class="item" href="/" style="color:white;font-weight: bold;text-align: center;font-family: 'Courier New'">
+    Welcome To TimeOut
+  </a>
+  <a class="item" href="/posts">
+    Posts
+  </a>
+  <div class="right menu">
+    <div class="ui dropdown item">
+      Basics <i class="dropdown icon"></i>
+      <div class="menu">
+        <!--      <a class="item" ><%#=link_to "Login" ,login_path %></a>-->
+        <%# if user_signed_in? %>
+        <!--        <div class="item">-->
+        <a class="item"  href="/quotation/ps2" >Basics 2</a>
+        <a class="item"  href="/site/ps1" >Basics 1</a>
+        <a class="item" href="/document">Document</a>
+        <a class="item" href="/ps4">ps4</a>
+        <div class="divider"></div>
+        <a class="item" data-method="delete" href="/logout" ><i class="sign out alternate icon"></i>Log Out</a>
+        <a class="item"  href="/edit" ><i class="edit icon"></i>Edit Account</a>
+        <!--        </div>-->
+
+        <%#else%>
+        <!--        <div class="item">-->
+        <!--        <a class="item" href=/quotation/ps2>Basics 2</a>-->
+        <!--        <a class="item" href="/site/ps1">Basics 1</a>-->
+        <!--        <a class="item" href="/document">Document</a>-->
+        <!--        <a class="item" href="/ps4">ps4</a>-->
+        <!--        <div class="divider"></div>-->
+        <!--        <a class="item"  href="/login" ><i class="sign-in icon"></i></i>Log IN</a>-->
+        <!--        </div>-->
+        <%#end %>
+      </div>
+    </div>
+
+    <div class="item">
+      <%# if user_signed_in? %>
+        <div class="middle aligned content">
+          <div class="header">
+            <i class="like icon"></i>
+            <%#=current_user.name %>
+          </div>
+        </div>
+        <p><%=current_user.first_name+" "+current_user.last_name %></p>
+      <%# else %>
+        <!--    <div class="ui primary button">Sign Up</div>-->
+        <%#= button_to  sign_up, class: "ui primary button", method: :get %>
+<!--        <div class="ui positive basic button" data-role="button" ><%#= link_to 'SignIn', new_user_session_path  %></div>-->
+<!--        <div class="ui button" tabindex="0" data-role="button" ><%#= link_to 'SignUp', new_user_registration_path  %></div>-->
+      <%#end %>
+    </div>
+  </div>
+  <%else %>
 <a class=" item" href="/document">
   Documnet
 </a>
 <a class="item" href="/site/index">
   WEB10
 </a>
-<a class="item" href="/posts">
-  Posts
-</a>
-<a class="item" href="/" style="color:white;font-weight: bold;text-align: center;font-family: 'Courier New'">
-  Welcome To TimeOut
-</a>
+
+
+
+<%#end %>
+
 <div class="right menu">
-  <div class="ui dropdown item">
-    Basics <i class="dropdown icon"></i>
-    <div class="menu">
+<!--  <div class="ui dropdown item">-->
+<!--    Basics <i class="dropdown icon"></i>-->
+<!--    <div class="menu">-->
       <!--      <a class="item" ><%#=link_to "Login" ,login_path %></a>-->
-      <% if user_signed_in? %>
+      <%# if user_signed_in? %>
 <!--        <div class="item">-->
-        <a class="item"  href="/quotation/ps2" >Basics 2</a>
-        <a class="item"  href="/site/ps1" >Basics 1</a>
-        <a class="item" href="/document">Document</a>
-        <div class="divider"></div>
-        <a class="item" data-method="delete" href="/logout" ><i class="sign out alternate icon"></i>Log Out</a>
-        <a class="item"  href="/edit" ><i class="edit icon"></i>Edit Account</a>
+<!--        <a class="item"  href="/quotation/ps2" >Basics 2</a>-->
+<!--        <a class="item"  href="/site/ps1" >Basics 1</a>-->
+<!--        <a class="item" href="/document">Document</a>-->
+<!--        <a class="item" href="/ps4">ps4</a>-->
+<!--        <div class="divider"></div>-->
+<!--        <a class="item" data-method="delete" href="/logout" ><i class="sign out alternate icon"></i>Log Out</a>-->
+<!--        <a class="item"  href="/edit" ><i class="edit icon"></i>Edit Account</a>-->
 <!--        </div>-->
 
-      <%else%>
+      <%#else%>
 <!--        <div class="item">-->
-        <a class="item" href=/quotation/ps2>Basics 2</a>
-        <a class="item" href="/site/ps1">Basics 1</a>
-        <a class="item" href="/document">Document</a>
-        <div class="divider"></div>
-        <a class="item"  href="/login" ><i class="sign-in icon"></i></i>Log IN</a>
+<!--        <a class="item" href=/quotation/ps2>Basics 2</a>-->
+<!--        <a class="item" href="/site/ps1">Basics 1</a>-->
+<!--        <a class="item" href="/document">Document</a>-->
+<!--        <a class="item" href="/ps4">ps4</a>-->
+<!--        <div class="divider"></div>-->
+<!--        <a class="item"  href="/login" ><i class="sign-in icon"></i></i>Log IN</a>-->
 <!--        </div>-->
-      <%end %>
-    </div>
-  </div>
+      <%#end %>
+<!--    </div>-->
+<!--  </div>-->
 
-  <div class="item">
-    <% if user_signed_in? %>
-      <div class="middle aligned content">
-        <div class="header">
-          <i class="like icon"></i>
+<!--  <div class="item">-->
+    <%# if user_signed_in? %>
+<!--      <div class="middle aligned content">-->
+<!--        <div class="header">-->
+<!--          <i class="like icon"></i>-->
           <%#=current_user.name %>
-        </div>
-      </div>
-          <p><%=current_user.first_name+" "+current_user.last_name %></p>
-    <% else %>
+<!--        </div>-->
+<!--      </div>-->
+<!--          <p><%#=current_user.first_name+" "+current_user.last_name %></p>-->
+    <%# else %>
       <!--    <div class="ui primary button">Sign Up</div>-->
       <%#= button_to  sign_up, class: "ui primary button", method: :get %>
       <div class="ui positive basic button" data-role="button" ><%= link_to 'SignIn', new_user_session_path  %></div>
       <div class="ui button" tabindex="0" data-role="button" ><%= link_to 'SignUp', new_user_registration_path  %></div>
-    <%end %>
-  </div>
+    <%#end %>
+<!--  </div>-->
 </div>
+<%end %>
