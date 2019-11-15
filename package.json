@@ -1,5 +1,9 @@
 {
   "name": "ps2ps2",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  }
+
 }
