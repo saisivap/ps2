@@ -42,7 +42,12 @@
             <%#=current_user.name %>
           </div>
         </div>
+      <%if current_user.admin==true %>
+<!--        <p><%#=current_user.first_name+" "+current_user.last_name %></p>-->
+        <p>Admin</p>
+        <%else %>
         <p><%=current_user.first_name+" "+current_user.last_name %></p>
+        <%end %>
       <%# else %>
         <!--    <div class="ui primary button">Sign Up</div>-->
         <%#= button_to  sign_up, class: "ui primary button", method: :get %>
