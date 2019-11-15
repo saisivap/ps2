@@ -14,12 +14,19 @@ test:
 #   region: us-east-1
 #   bucket: your_own_bucket
 
+#amazon:
+#  service: s3
+#  access_key_id: <%= Rails.application.credentials.dig(:aws, AKIAQPGMSQY5X47IZASV) %>
+#  secret_access_key: <%= Rails.application.credentials.dig(:aws, U7sZVqIWLlbV8YgwblJEhBc0NgqR2VaZ6ETVlZ2m) %>
+#  region: us-east-2
+#  bucket: timeoutait
 amazon:
   service: s3
-  access_key_id: <%= Rails.application.credentials.dig(:aws, AKIAQPGMSQY5X47IZASV) %>
-  secret_access_key: <%= Rails.application.credentials.dig(:aws, U7sZVqIWLlbV8YgwblJEhBc0NgqR2VaZ6ETVlZ2m) %>
-  region: us-east-2
-  bucket: timeoutait
+  access_key_id: <%= ENV['AKIAQPGMSQY5X47IZASV'] %>
+  secret_access_key: <%= ENV['U7sZVqIWLlbV8YgwblJEhBc0NgqR2VaZ6ETVlZ2m'] %>
+  region: <% ENV['us-east-2'] %>
+  bucket: <% ENV['timeoutait'] %>
+
 
 
 # Remember not to checkin your GCS keyfile to a repository
