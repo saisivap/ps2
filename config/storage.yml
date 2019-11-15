@@ -22,10 +22,10 @@ local:
 #  bucket: timeoutait
 amazon:
   service: s3
-  access_key_id: <%= ENV['AKIAQPGMSQY5X47IZASV'] %>
-  secret_access_key: <%= ENV['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'] %>
+  access_key_id: <%= ENV[AKIAQPGMSQY5X47IZASV] %>
+  secret_access_key: <%= ENV[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] %>
   region: us-east-1
-  bucket: <% ENV['timeoutait'] %>
+  bucket: <% ENV[timeoutait] %>
 
 
 
